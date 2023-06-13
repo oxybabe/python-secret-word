@@ -17,7 +17,7 @@ while not correct:
     elif guess not in secret_word:
         print("You guessed an incorrect letter!")
     if guess_list == sorted(secret_word):
-        print("Correct! You guessed the secret word!") 
+        print(f"Correct! You guessed the secret word, {secret_word}!") 
         correct = True
         
         
