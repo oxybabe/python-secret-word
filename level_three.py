@@ -24,6 +24,9 @@ while not correct:
     elif guess in secret_word:
         guess_list.append(guess) 
         print("You guessed the following correct letters: ", guess_list)
-    if guess_list == sorted(secret_word):
-        print("Correct! You guessed the secret word!") 
+    if set(guess_list) == set(secret_word):
+        
+        print("Correct! You guessed the secret word! The secret word was", "" .join(secret_word)) 
         correct = True
+        break
+    # In Python, the set() constructor creates a new set object. The set() constructor takes a list of items as an argument and makes a new set that contains only those items. 
