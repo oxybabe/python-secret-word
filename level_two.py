@@ -5,7 +5,7 @@ print("Welcome to the secret word game!")
 print("Can you guess the secret word?")
 secret_word = random.choice(word_bank)
 secret_word = list(secret_word)
-print(secret_word)
+# print(secret_word)
 guess_list = []
 correct = False
 while not correct:

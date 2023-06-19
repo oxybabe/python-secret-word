@@ -12,7 +12,7 @@ while not correct:
         print("You guessed the following correct letters: ", guess_list)
     elif guess not in secret_word:
         print("You guessed an incorrect letter!")
-    if guess_list == secret_word:
+    if set(guess_list) == set(secret_word):
         print("Correct! You guessed the secret word!") 
         correct = True
         

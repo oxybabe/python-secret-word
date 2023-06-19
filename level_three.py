@@ -13,7 +13,7 @@ elif user_input == "hard":
     secret_word = random.choice(hard_word_bank)
 print("Can you guess the secret word?")
 secret_word = list(secret_word)
-print(secret_word)
+# print(secret_word)
 guess_list = []
 correct = False
 while not correct:
